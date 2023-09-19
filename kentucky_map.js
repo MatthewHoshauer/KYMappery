@@ -15,8 +15,8 @@ fetch('kentucky.geojson') // IMPORTANT: Adjust the path to your GeoJSON file
         // Create a GeoJSON layer and add it to the map
         L.geoJSON(data, {
             style: {
-                color: 'red',       // Border Color
-                weight: 2,          // Border Thickness in Pixels
+                color: 'black',       // Border Color
+                weight: 30,          // Border Thickness in Pixels
                 opacity: 1,         // Border opacity (1 = fully visible)
                 fillColor: 'none',  // Fill color (none to make it transparent)
             }
