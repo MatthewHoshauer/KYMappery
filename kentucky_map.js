@@ -13,5 +13,12 @@ fetch('kentucky.geojson') // IMPORTANT: Adjust the path to your GeoJSON file
     })
     .then(function(data) {
         // Create a GeoJSON layer and add it to the map
-        L.geoJSON(data).addTo(map);
+        L.geoJSON(data), {
+            style: {
+                color: 'red',       // Border Color
+                weight: 2,          // Border Thickness in Pixels
+                opacity: 1,         // Border opacity (1 = fully visible)
+                fillColor: 'none',  // Fill color (none to make it transparent)
+            }
+        }.addTo(map);
     });
